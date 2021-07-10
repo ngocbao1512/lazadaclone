@@ -1,3 +1,7 @@
+**git clone https://github.com/ngocbao1512/lazadaclone.git**
+<br>run project width terminal : yarn start or npm start 
+<br> **! chưa responsive**
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
