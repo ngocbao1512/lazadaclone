@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* font-family: 'Roboto Condensed', sans-serif; */
+
+:root {
+  --bodycolor: #999;
+  --pagebackground: #f5f5f5;
+  --orange: #f57224;
+  --inputsearch: #eff0f5;
+  --white: #fff;
+  --black: #212121;
+  --topheader: rgba(247,247,247,1);
+  --topheadercolor : #9e9e9e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--pagebackground);
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* header */
+.topheader {
+  background-color: var(--topheader);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+}
+
+.linkheader a {
+  color: var(--topheadercolor);
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 25px ;
+  font-size: 12px;
+}
+
+.linkheader a:nth-child(1):hover,
+.linkheader a:nth-child(2):hover,
+.linkheader a:hover {
+  color: var(--orange);
+  transition: all 0.2s;
+}
+.linkheader a:nth-child(1),
+.linkheader a:nth-child(2) {
+  color: #0f1568;
+}
+
+.mainheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: var(--white);
+}
+.logo-bar-content .logo {
+  width: 127px;
+  height: 40px;
+  margin-right: 80px;
+}
+
+.logo-bar-content .cart {
+  height: 26px;
+  width: 29px;
+  left: 50%;
+  top: 50%;
+}
+
+.logo-bar-content .momo {
+  height: 45px;
+  width: 188px;
+  margin-left: 4rem;
+}
+
+.logo-bar-content input {
+  height: 45px;
+  width: 688px;
+  border: none;
+  font-size: 12px;
+  padding: 10px;
+  background-color: var(--inputsearch);
+  border-radius: 2px;
+}
+.logo-bar-content button {
+  height: 46px;
+  width: 45px;
+  background-color: var(--orange);
+  left: -45px;
+  border: none;
+  outline: none;
+  position: relative;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+/* banner */
+.banner {
+  height: auto;
+  background-color: rgba(0, 0, 255, 0.699);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ===================== */
+/* ====== main ========= */
+/* ===================== */
+.page {
+  background-color: var(--pagebackground);
+  height: 375px;  
+  min-width: 1188px;
+  font-size: 12px;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.page .dealchopnhoang,
+.page .bosuutap,
+.page .lazamall,
+.page .danhriengchoban {
+  margin: 0px auto;
+  width: 63%;
+  margin-bottom: 20px;
+  margin-bottom: 80px;
+}
+
+.page p.title {
+  font-size: 22px;
+  color: #424242;
+  font-weight: normal;
+}
+.col-xs-2 {
+  width: 188px;
+  margin-left: 10px;
+  padding: 5px;
+}
+.page .dealchopnhoang .spdealchopnhoang {
+  margin-bottom: 12px;
+  background-color: var(--white);
+  line-height: 1.15;
+  padding: 0px 0px;
+  
+}
+
+/* sp deal chop nhoang */
+
+.spdealchopnhoang img {
+  height: 188px;
+  width: 188px;
+  text-align: center;
+
+}
+.spdealchopnhoang p.tensanpham {
+  width: 172px;
+  font-size: 14px;
+  height: 36px;
+  line-height: 18px;
+
+  color: #000;
+  margin-bottom: 4px;
+  margin-top: 8px;
+}
+ .giaban {
+  font-size: 18px;
+  color: var(--orange);
+}
+ .gianhap {
+  color: #9e9e9e;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration: line-through;
+}
+ .gianhap span {
+  color: #212121;
+  margin-left: 4px;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration: none;
+}
+/* bo suu tap  */
+.spbosuutap {
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.elementbst {
+  background-color: var(--white);
+  border: 1px solid var(--pagebackground);
+  height: 146px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.elementbst img {
+  height: 67px;
+  width: 67px;
+}
+.elementbst .tensanpham {
+  font-size: 14px;
+  color: #212121;
+  height: 18px;
+  line-height: 18px;
+}
+.elementbst .soluong {
+  margin: 6px auto;
+  font-size: 12px;
+  height: 14px;
+  line-height: 14px;
+  color: #757575;
+}
+/* lazmall */
+.elementlazmall {
+  display: block;
+  width: 188px;
+  height: 270px;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.elementlazmall img.banner {
+  height: 188px;
+  width: 180px;
+}
+.elementlazmall img.logo {
+  height: 44px;
+  width: 44px;
+  margin: -55px 70px;
+  border: 4px solid white;
+}
+.elementlazmall p.ten {
+  text-align: center;
+  position: relative;
+  font-size: 14px;
+  color: #212121;
+  margin: 8px 8px 4px;
+}
+.elementlazmall p.mota {
+  position: relative;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  color: #9e9e9e;
+  margin: 0 8px;
+}
+
+/* =================================== */
+/* ======= Danh Rieng Cho Ban========= */
+.danhriengchoban {
+  margin-top: 600px;
+}
+.elementonlyforyou {
+  width: 180px;
+  height: 325px;
+  margin-right: 8px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  line-height: 1.15;
+  background-color: var(--white);
+}
+.elementonlyforyou img {
+  width: 174px;
+  height: 174px;
+  overflow: hidden;
+  top: 0;
+  margin-top: 0;
+}
+.elementonlyforyou .tensanpham {
+  position: relative;
+  font-size: 14px;
+  color: #212121;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  height: 36px;
+  width: 173px;
+  padding-top: 6px;
+}
+
+
+
+/* ===================================== */
+.footer {
+  width: 63%;
+  border-top: 1px solid rgba(189, 186, 186, 0.623);
+  padding: 5px;
+  padding-top: 30px;
+  background-color: transparent;
+  min-height: 400px;
+  content: '';
+  margin: 0px auto;
+  position: relative;
+  margin-top: 3400px;
+}
+.footer .voucher-thethanhtoan img {
+  width: 388px;
+  height: 97px;
+  top: 0;
+  margin-bottom: 60px;
+}
+.linkthongtinlienhe {
+  font-size: 12px;
+  color: blue;
+}
